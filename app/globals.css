@@ -4,17 +4,25 @@
 
 @layer base {
   h2 {
+    font-family: var(--font-bebas-neue), sans-serif;
   }
   h3 {
+    font-family: var(--font-bebas-neue), sans-serif;
   }
   h4 {
+    font-family: var(--font-bebas-neue), sans-serif;
   }
   h5 {
+    font-family: var(--font-bebas-neue), sans-serif;
   }
   h6 {
+    font-family: var(--font-bebas-neue), sans-serif;
   }
   p,
-  span {
+  span,
+  li,
+  a {
+    font-family: var(--font-roboto), sans-serif;
   }
 }
 

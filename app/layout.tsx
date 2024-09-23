@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Bebas_Neue, Roboto } from "next/font/google";
 import "./globals.css";
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-bebas-neue",
+});
+
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="mint">
+    <html
+      lang="en"
+      data-theme="mint"
+      className={`${bebasNeue.variable} ${roboto.variable}`}
+    >
       <body className={`antialiased`}>{children}</body>
     </html>
   );
