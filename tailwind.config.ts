@@ -14,6 +14,22 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mint: {
+          primary: "#2af471",
+          secondary: "#1db452",
+          accent: "#72f891",
+          neutral: "#373737",
+          "base-100": "#080808",
+          "base-content": "#e0e0e0",
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
+  },
 };
 export default config;
